@@ -16,4 +16,4 @@ export default function AboutPage() {
         </div>
     );
 }
-//This is will be generated at build time and then served as static HTML
+//This is will be generated at build time and then served as static HTML -SSG
