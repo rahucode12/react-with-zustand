@@ -1,17 +1,28 @@
+'use client';
 // @ts-nocheck
 import { useOptimistic, useState } from 'react';
 import Link from 'next/link';
+import { deepClone } from '@/lib/util/util';
 
 export default function UseOptimisticExample() {
   const [comments, setComments] = useState([
     { id: 1, text: 'This is great!' },
     { id: 2, text: 'Love this example.' },
   ]);
-  const [optimisticComments, addOptimisticComment] = useOptimistic(
+  const [optimisticComments, addOptimisticComment] = useOptimistic<
+    { id: number; text: string; }[], // state type
+    { id: number; text: string; }    // action type
+  >(
     comments,
     (state, newComment) => [...state, newComment]
   );
   const [input, setInput] = useState('');
+  const obj = { a: 1, b: 2 };
+  console.log(obj );
+  const obj2 = deepClone(obj);
+  obj2.a = 3;
+  console.log(obj2 );
+
 
   async function handleAdd(e) {
     e.preventDefault();

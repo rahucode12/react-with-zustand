@@ -1,3 +1,4 @@
+'use client';
 import { useInsertionEffect, useRef } from 'react';
 import Link from 'next/link';
 

@@ -28,6 +28,18 @@ export default function Home() {
         </Link>
       </Box>
 
+      <Box marginTop={2}>
+        <Link href="/hooks-examples" style={{ color: '#388e3c', textDecoration: 'underline' }}>
+          🧩 Explore Latest React Hooks (18/19+) Practical Examples
+        </Link>
+      </Box>
+
+      <Box marginTop={2}>
+        <Link href="/css-position-examples" style={{ color: '#ff6b35', textDecoration: 'underline' }}>
+          🎯 Master CSS Position Properties - Complete Guide with Examples
+        </Link>
+      </Box>
+
     </Box>
 
   );

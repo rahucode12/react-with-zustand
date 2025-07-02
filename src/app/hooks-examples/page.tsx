@@ -34,7 +34,7 @@ const hooks = [
   {
     name: 'useEvent',
     path: '/hooks-examples/use-event',
-    desc: 'Stable event callbacks that don't change on every render (React 19+).'
+    desc: 'Stable event callbacks that don\'t change on every render (React 19+).'
   },
 ];
 
