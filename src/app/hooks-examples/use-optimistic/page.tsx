@@ -2,7 +2,7 @@
 // @ts-nocheck
 import { useOptimistic, useState } from 'react';
 import Link from 'next/link';
-import { deepClone } from '@/lib/util/util';
+import { deepClone } from '@/lib/util/deepClone';
 
 export default function UseOptimisticExample() {
   const [comments, setComments] = useState([
@@ -24,7 +24,7 @@ export default function UseOptimisticExample() {
   console.log(obj2 );
 
 
-  async function handleAdd(e) {
+  async function handleAdd(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!input.trim()) return;
     addOptimisticComment({ id: Date.now(), text: input });

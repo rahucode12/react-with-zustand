@@ -40,6 +40,12 @@ export default function Home() {
         </Link>
       </Box>
 
+      <Box marginTop={2}>
+        <Link href="/websocket-examples" style={{ color: '#9c27b0', textDecoration: 'underline' }}>
+          🔌 WebSocket Examples - Real-time Communication Demo
+        </Link>
+      </Box>
+
     </Box>
 
   );

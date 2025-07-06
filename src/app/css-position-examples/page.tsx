@@ -136,11 +136,7 @@ export default function CSSPositionExamples() {
                             2. Position: Relative
                         </Typography>
                         <Typography variant="body1" sx={{ mb: 3, color: 'grey.600' }}>
-                            I'll be in my original spot, but I might nudge myself left/right/up/down.
-                            🧒 Child example:
-
-                            You're standing in line but take one step to the side — you're still counted in line.
-                        </Typography>
+                        Useful when you want to move something slightly from where it was without removing it from layout </Typography>
 
                         <Paper
                             sx={{
