@@ -46,6 +46,22 @@ export default function Home() {
         </Link>
       </Box>
 
+      <Box marginTop={2}>
+        <Link href="/fiber-effect-examples" style={{ color: '#00bcd4', textDecoration: 'underline' }}>
+          ⚡ React Fiber Effect Examples - See Concurrent Rendering in Action
+        </Link>
+      </Box>
+      <Box marginTop={2}>
+        <Link href="/fiber-effect-examples" style={{ color: '#00bcd4', textDecoration: 'underline' }}>
+        JS Topics
+        </Link>
+      </Box>
+      <Box marginTop={2}>
+        <Link href="/mui-table-demo" style={{ color: '#00bcd4', textDecoration: 'underline' }}>
+       Dynamic Table
+        </Link>
+      </Box>
+
     </Box>
 
   );
