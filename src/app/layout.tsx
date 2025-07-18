@@ -4,6 +4,7 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 import { cookies } from "next/headers";
 import LogOut from "./_component/LogOut/LogOut";
+import { Link, Typography } from "@mui/material";
 
 
 
@@ -34,7 +35,14 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+
         {token && <LogOut />}
+
+        <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Typography variant="h6" sx={{ color: 'blue.600', mb: 1 }}>
+            ← Back to Home
+          </Typography>
+        </Link>
 
 
         {children}

@@ -35,6 +35,12 @@ export default function Home() {
       </Box>
 
       <Box marginTop={2}>
+        <Link href="/hooks-examples/virtualization" className="text-blue-600 hover:underline">
+          Virtualization Example
+        </Link>
+      </Box>
+
+      <Box marginTop={2}>
         <Link href="/css-position-examples" style={{ color: '#ff6b35', textDecoration: 'underline' }}>
           🎯 Master CSS Position Properties - Complete Guide with Examples
         </Link>
@@ -52,7 +58,7 @@ export default function Home() {
         </Link>
       </Box>
       <Box marginTop={2}>
-        <Link href="/fiber-effect-examples" style={{ color: '#00bcd4', textDecoration: 'underline' }}>
+        <Link href="/java-script-topics" style={{ color: '#00bcd4', textDecoration: 'underline' }}>
         JS Topics
         </Link>
       </Box>
